@@ -1,3 +1,32 @@
 body {
   background-image: url('https://i.pinimg.com/originals/73/a8/56/73a8567f15361a41a8f023add9978fe7.jpg');
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('https://fondosmil.com/fondo/26788.jpg');
+    background-size: 4000px;
+  }
+}
+
+  
+  @media screen and (max-width: 767px) {
+    body {
+      background-image: url('https://fondosmil.com/fondo/26795.jpg');
+      background-size: 4000px;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    body {
+      background-image: url('https://fondosmil.com/fondo/26788.jpg');
+      background-size: 4000px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+      background-image: url('https://i.pinimg.com/originals/73/a8/56/73a8567f15361a41a8f023add9978fe7.jpg');
+      background-size: 1500px;
+    }
+  }

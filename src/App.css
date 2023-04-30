@@ -3,79 +3,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1200px;
-  height: 500px;
+  width: 90%;
+  height: 80%;
   backdrop-filter: blur(50px);
-  border-radius: 50px;
+  border-radius: 1.25rem;
+  max-width: 1200px;
 }
 
-.button {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  padding: 10px 20px;
-  color: rgb(189, 189, 189);
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  cursor: pointer;
-}
-
-.button:hover {
-  transform: scale(1.05);
-}
-
-.button2 {
-  position: absolute;
-  top: 5px;
-  right: 120px;
-  padding: 10px 20px;
-  color: rgb(189, 189, 189);
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  cursor: pointer;
-}
-
-.button2:hover {
-  transform: scale(1.05);
-}
-
-.button3 {
-  position: absolute;
-  top: 5px;
-  right: 320px;
-  padding: 10px 20px;
-  color: rgb(189, 189, 189);
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  cursor: pointer;
-}
-
-.button3:hover {
-  transform: scale(1.05);
-}
-
+.button,
+.button2,
+.button3,
 .button4 {
   position: absolute;
-  top: 5px;
-  right: 480px;
-  padding: 10px 20px;
+  top: 0.3125rem;
+  padding: 0.625rem 1.25rem;
   color: rgb(189, 189, 189);
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 20px;
@@ -85,18 +28,37 @@
   cursor: pointer;
 }
 
+.button:hover,
+.button2:hover,
+.button3:hover,
 .button4:hover {
   transform: scale(1.05);
 }
 
+.button {
+  right: 1.25rem;
+}
+
+.button2 {
+  right: 7.5rem;
+}
+
+.button3 {
+  right: 20rem;
+}
+
+.button4 {
+  right: 30rem;
+}
+
 .text {
-  font-size: 25px;
+  font-size: 1.5625em;
   position: absolute;
-  top: 90px;
-  left: 40px;
+  top: 5rem;
+  left: 2.5rem;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  max-width: 490px;
+  max-width: 30.625rem;
 }
 
 .text > h1 {
@@ -120,10 +82,10 @@
 
 .title {
   color: rgb(224, 224, 224);
-  font-size: 40px;
+  font-size: 2.5em;
   position: absolute;
-  top: -50px;
-  left: 40px;
+  top: -3.125rem;
+  left: 2.5em;
 }
 
 .paragraph {
@@ -131,15 +93,15 @@
   color: white;
   font-family: sans-serif;
   margin: 0;
-  left: 45px;
-  top: 55%;
+  left: 2.8125em;
+  top: 53%;
 }
 
 .btn-now {
   position: absolute;
   top: 80%;
-  left: 45px;
-  padding: 15px 35px;
+  left: 2.8125em;
+  padding: 0.9375em 2.1875em;
   background-color: #fff;
   color: #222;
   font-size: 15px;
@@ -157,12 +119,248 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-.image img{
+.image img {
   position: absolute;
   margin: 0;
   top: 15%;
-  left: 882px;
-  width: 400px;
-  height: 400px;
+  left: 55.125em;
+  width: 25em;
+  height: 25em;
   cursor: default;
+}
+
+@media screen and (min-width: 768px) {
+  .image img {
+    height: 2.5em;
+    width: 2.5em;
+    left: 10.625em;
+    position: absolute;
+    top: 85%;
+    border-radius: 50%;
+  }
+  .title {
+    font-size: 1.125em;
+    top: -5px;
+    left: 2.5em;
+  }
+  .text {
+    font-size: 0.9375em;
+  }
+  .container {
+    height: 21.875em;
+  }
+  .paragraph {
+    font-size: 1em;
+  }
+  .btn-now {
+    top: 85%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image img {
+    height: 2.5em;
+    width: 2.5em;
+    left: 11.625em;
+    position: absolute;
+    top: 80%;
+    border-radius: 50%;
+  }
+  .title {
+    font-size: 1.25em;
+    top: -3px;
+    left: 2.5em;
+  }
+  .paragraph {
+    font-size: 0.9375em;
+    top: 56%;
+    max-width: 30ch;
+  }
+  .text {
+    font-size: 1.5625em;
+    height: 50px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    padding: 0.625em;
+    position: absolute;
+    z-index: 2;
+    left: 21em;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: transparent;
+    min-width: 10em;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    left: 13em;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.288);
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.212);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 80%;
+    backdrop-filter: blur(50px);
+    border-radius: 1.25rem;
+    max-width: 1200px;
+  }
+
+  .button,
+  .button2,
+  .button3,
+  .button4 {
+    position: absolute;
+    top: 0.3125rem;
+    padding: 0.625rem 1.25rem;
+    color: rgb(189, 189, 189);
+    font-size: 0.9375rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    cursor: pointer;
+  }
+
+  .button:hover,
+  .button2:hover,
+  .button3:hover,
+  .button4:hover {
+    transform: scale(1.05);
+  }
+
+  .button {
+    right: 1.25rem;
+  }
+
+  .button2 {
+    right: 7.5rem;
+  }
+
+  .button3 {
+    right: 20rem;
+  }
+
+  .button4 {
+    right: 30rem;
+  }
+
+  .text {
+    font-size: 1.5625em;
+    position: absolute;
+    top: 5.625rem;
+    left: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    max-width: 30.625rem;
+  }
+
+  .text > h1 {
+    margin: 0;
+  }
+
+  .text > span {
+    display: block;
+    text-align: center;
+  }
+
+  .text > span:nth-child(1) {
+    order: 1;
+  }
+  .text > span:nth-child(2) {
+    order: 2;
+  }
+  .text > span:nth-child(3) {
+    order: 3;
+  }
+
+  .title {
+    color: rgb(224, 224, 224);
+    font-size: 2.5em;
+    position: absolute;
+    top: -3.125rem;
+    left: 1em;
+  }
+
+  .paragraph {
+    position: absolute;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    left: 2.8125em;
+    top: 55%;
+  }
+
+  .btn-now {
+    position: absolute;
+    top: 80%;
+    left: 2.8125em;
+    padding: 0.9375em 2.1875em;
+    background-color: #fff;
+    color: #222;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .btn-now:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .image img {
+    position: absolute;
+    margin: 0;
+    top: 15%;
+    left: 55.125em;
+    width: 25em;
+    height: 25em;
+    cursor: default;
+    border-radius: 0;
+  }
 }
